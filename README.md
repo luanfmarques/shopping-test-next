@@ -9,6 +9,8 @@
 
 > Projeto totalmente responsivo tentando respeitar ao máximo o protótipo.
 
+<https://shopping-next-challenge.vercel.app/>
+
 ## 💻 Stack utilizada
 
 * Typescript
