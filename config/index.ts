@@ -1,3 +1,5 @@
 const dev = process.env.NODE_ENV !== "production";
 
-export const server = dev ? "http://localhost:3000" : "https://production.com";
+export const server = dev
+  ? "http://localhost:3000"
+  : "https://shopping-next-challenge.vercel.app";
