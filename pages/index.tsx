@@ -7,7 +7,7 @@ import {
   HomeContainer,
   HomeContentContainer,
   PrimaryContent,
-} from "./styles/home";
+} from "../styles/home";
 
 import { server } from "config";
 import { useState } from "react";
@@ -24,6 +24,7 @@ export default function Home({ data }: HomeProps) {
   const { setItemToCart } = useCartContext();
 
   const sortByFilterProducts = (item: IProduct[]) => {
+    if (!Array.isArray(item)) return;
     if (order === "Menor preço") return item.sort((a, b) => a.price - b.price);
     if (order === "Ordem alfabética")
       return item.sort((a, b) => a.name.localeCompare(b.name));
@@ -50,7 +51,7 @@ export default function Home({ data }: HomeProps) {
           </header>
 
           <main>
-            {sortByFilterProducts(data).map((product) => (
+            {sortByFilterProducts(data)?.map((product) => (
               <ProductItem
                 key={product.id}
                 image={product.image}

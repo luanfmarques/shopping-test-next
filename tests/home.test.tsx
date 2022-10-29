@@ -1,5 +1,5 @@
 import { fireEvent, render } from "helpers/test-utils";
-import Home from ".";
+import Home from "../pages";
 import data from "public/products.json";
 
 describe("Home tests", () => {
