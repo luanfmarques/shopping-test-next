@@ -21,9 +21,9 @@ export const theme = {
   },
   maxWidth: 1280,
   breakpoints: {
-    sm: 480,
-    md: 768,
+    sm: 500,
+    md: 850,
     lg: 1024,
-    xlg: 1200,
+    xlg: 1300,
   },
 };
